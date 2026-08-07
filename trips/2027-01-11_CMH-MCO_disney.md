@@ -7,7 +7,10 @@ cabin: economy
 status: planning        # planning | researched | booked | completed | cancelled
 booked_option: null
 tags: [disney, orlando, family, theme-park]
-points_at_search: {}    # fill from travel-profile.md at search time
+points_at_search:
+  delta_skymiles: 120000        # likely committed to the Thanksgiving trip
+  chase_ultimate_rewards: 220000
+  wife_signup_bonus: 100000     # expected Oct-Nov 2026, should be available for this trip
 ---
 
 # Disney — Columbus to Orlando
@@ -16,8 +19,32 @@ points_at_search: {}    # fill from travel-profile.md at search time
 **Travel dates:** Depart **Monday, January 11, 2027**, return **Friday, January 15, 2027**.
 **Nights:** 4
 **Cabin:** Economy
-**Travelers:** TODO (see `travel-profile.md`)
-**Status:** Planning — nothing searched or booked yet.
+**Travelers:** 2 adults
+**Status:** Planning — currency strategy set, no live pricing pulled yet.
+
+## Currency strategy — this is the Chase UR trip
+
+Delta miles are earmarked for Thanksgiving (see that brief — Chase cannot reach Delta, so
+those 120K miles have no other outlet). That leaves **220K Chase UR, plus the ~100K signup
+bonus that should post around Oct–Nov**, for this trip. Timing works: booking happens
+Nov–Dec for January travel.
+
+The highest-value use of UR here is almost certainly **the hotel, not the flights**:
+
+| Use of Chase UR | Rate | Verdict |
+|---|---|---|
+| Transfer to **World of Hyatt** 1:1 | 1.4–1.7 cpp | **Best available.** Most valuable hotel currency across all four valuation sources. |
+| Chase Travel portal (cash fare) | 1.25–1.5 cpp fixed | Solid floor. Still earns airline miles since it's a paid ticket. |
+| Transfer to **Southwest** 1:1 | 1.2–1.3 cpp | Fine, and bags fly free — worth it for a park trip with luggage. |
+| Transfer to **Marriott Bonvoy** 1:1 | 0.6–0.7 cpp | **Avoid.** Roughly half the value of Hyatt. |
+
+That Marriott line corrects something worth flagging: the Swan, Dolphin, and Swan Reserve
+are a genuinely good Disney-adjacent option, but **on cash, for the on-property perks —
+not on Bonvoy points.** At 0.6–0.7 cpp, paying with Bonvoy is one of the weaker
+redemptions in the whole toolkit.
+
+Burning UR on a cheap CMH–MCO economy fare is the classic low-value move. Price the
+flights in cash first and reserve the points for lodging unless the fares come in high.
 
 ---
 
