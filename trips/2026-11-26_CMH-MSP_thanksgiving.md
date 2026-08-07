@@ -26,42 +26,63 @@ Thanksgiving Day is Thu Nov 26. Six nights.
 
 ---
 
-## VERIFIED QUOTE — delta.com, 2026-08-07
+## VERIFIED QUOTES — delta.com, 2026-08-07
 
-Searched **Nov 21–28**, not the Nov 24–30 in this brief's frontmatter. Confirm which
-window you actually want; Sat-to-Sat is a genuinely smart holiday pattern that dodges both
-the Wednesday-before and Sunday-after peaks, but it's a 7-night trip, not 6.
+Searched **Nov 21–28** (Sat–Sat), not the Nov 24–30 in the frontmatter. Sat-to-Sat dodges
+both the Wednesday-before and Sunday-after peaks — a good window, but a 7-night trip.
 
-Best outbound shown: **DL3753, Sat Nov 21, 7:05a–8:18a, nonstop, 2h13m** (SkyWest dba
-Delta Connection).
+Best flight shown: **DL3753, Sat Nov 21, 7:05a–8:18a, nonstop, 2h13m** (SkyWest dba Delta
+Connection).
 
-| | Value |
-|---|---|
-| Round trip **per passenger** | **26,600 miles + $12** (after 15% Card Member Savings, from 31,400) |
-| × 4 passengers | **106,400 miles + $48** |
-| Balance | **100,026 miles** |
-| **Shortfall** | **6,374 miles — not affordable at 4 passengers** |
-
-### This settles the allocation question
-
-Thanksgiving cannot be booked on miles for four people. Orlando can (89,600, leaving
-10,426). So the SkyMiles go to Orlando and **this trip goes on Chase points or cash.**
-
-For the record, had the balance covered it, Thanksgiving would need cash above these
-levels to beat Orlando's verified 1.60 cpp:
-
-| cpp | Cash per person | Cash for 4 |
+| | Per passenger RT | × 4 passengers |
 |---|---|---|
-| 1.00 (Delta floor) | $278.00 | $1,112 |
-| 1.25 (Delta ceiling) | $344.50 | $1,378 |
-| **1.60 (Orlando benchmark)** | **$437.60** | **$1,750** |
+| Award (Main, lowest) | **26,600 miles + $12** (from 31,400, after 15% card savings) | **106,400 miles + $48** |
+| Cash — **Main Basic** | **$369** | **$1,476** |
+| Cash — **Main Classic** | **$499** | **$1,996** |
 
-If Thanksgiving cash comes in above ~$438/person, it *is* the better redemption on cpp —
-but only reachable by putting 3 passengers on miles (79,800, leaving 20,226) and buying
-the 4th ticket in cash. Worth pricing before dismissing.
+**Award cpp = (369 − 12) ÷ 26,600 × 100 = 1.34** — above Delta's 1.25 ceiling from
+`data/points-valuations.json`, so a decent redemption in isolation.
 
-26,600 miles round trip for a nonstop at Thanksgiving is a reasonable price, not a
-gouge — the constraint here is the balance, not the rate.
+### Decision: the miles go to Orlando, not here
+
+Two independent reasons, either one sufficient:
+
+1. **Can't afford it.** 106,400 miles needed against a 100,026 balance — **short 6,374**.
+2. **Orlando is the better redemption anyway.** Verified 1.60 cpp there vs **1.34 cpp**
+   here. Orlando wins by 0.26 cpp, and it fits the balance with 10,426 to spare.
+
+There is no split worth doing: putting 3 passengers on miles here (79,800) leaves 20,226,
+which no longer covers Orlando. It's genuinely either/or, and Orlando is the answer.
+
+**So this trip is paid in cash or Chase UR.**
+
+### Main Basic is a problem for this party
+
+Delta's Main Basic restrictions, straight off the fare card: *seats assigned after
+check-in, cannot change seat*; boards Zone 8 with limited overhead bin space; ineligible
+to earn miles; ineligible for upgrades; cancel for partial eCredit only.
+
+For 2 adults + 2 children + a lap infant, "seats assigned after check-in, cannot change
+seat" means a real chance of being split across the cabin. Main Classic fixes it for
+**+$130 per person / +$520 for four**, and restores mileage earning and full cancellation.
+
+That $520 is the most consequential open decision on this trip.
+
+### Paying with Chase UR
+
+| Fare | Cash for 4 | @ 1.25 cpp (Preferred) | @ 1.5 cpp (Reserve) |
+|---|---|---|---|
+| Main Basic | $1,476 | 118,080 UR | 98,400 UR |
+| Main Classic | $1,996 | 159,680 UR | 133,067 UR |
+
+All four figures fit inside 220K UR. But **Chase UR's own floor is 1.7 cpp**, so the portal
+at 1.25–1.5 spends a premium currency below its floor. Paying cash preserves the UR for a
+redemption that clears 1.7 — which is the right call *if* a better use is actually coming.
+With lodging already handled, that's an open question worth answering deliberately rather
+than by default.
+
+Confirming which Chase card is held decides a $550-equivalent swing across 220K points and
+is still a TODO in `travel-profile.md`.
 
 ## The dates are the good ones
 
