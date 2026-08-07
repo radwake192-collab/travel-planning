@@ -196,7 +196,7 @@ points option against the cash fare:
 | Flying Blue / Virgin Atlantic | 220K UR 1:1 | Best value if space exists | **High** — partner saver only |
 | Southwest award | 220K UR 1:1 | ~$2,860 of fare at 1.3 cpp | None |
 | Chase portal | 220K UR direct | $2,750–$3,300 at 1.25–1.5 cpp | None |
-| Delta award | 120K SkyMiles | ~1–2 of the 4 tickets | None, but price is dynamic |
+| ~~Delta award~~ | 100,026 SkyMiles | **Ruled out — needs 106,400 for 4** | — |
 | Cash | — | — | None |
 
 Take the lowest real out-of-pocket cost for four seats plus bags. Chase UR's own floor is
