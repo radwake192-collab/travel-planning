@@ -90,7 +90,7 @@ dates*:
 | Door | Currency | Inventory visible | 4 seats on Nov 24/30? |
 |---|---|---|---|
 | Chase portal | 220K UR @ 1.25–1.5 cpp | Any seat that's for sale | **Yes — guaranteed** |
-| Southwest | 220K UR → 1:1 | Any seat that's for sale | **Yes — guaranteed** |
+| Southwest | 220K UR → 1:1 | Any seat that's for sale | **Yes — guaranteed** (but bags now cost, see Bags section) |
 | Delta SkyMiles | 100,026, no top-up | All Delta seats, no capacity control | **No — priced at 106,400 for 4, short by 6,374** |
 | Flying Blue | 220K UR → 1:1 | Delta **partner saver** space only | Unlikely, but the best value if it exists |
 | Virgin Atlantic | 220K UR → 1:1 | Delta **partner saver** space only | Unlikely, but the best value if it exists |
@@ -131,9 +131,8 @@ availability is common.
 2. **Get the Delta cash price** for the same flights. It's the denominator for every
    remaining comparison, and it decides whether the 3-plus-1 split is worth doing.
 3. **Southwest via the `southwest` skill.** Revenue-linked awards, so no saver-space
-   problem at 4 seats. Note the bag advantage is smaller than previously assumed — the
-   Delta SkyMiles Amex gives a free first checked bag to the cardholder and companions on
-   the same reservation.
+   problem at 4 seats, and points fares stay refundable on Choice and above.
+   **The bag argument now runs the other way** — see below.
 4. **Chase portal** at 1.25–1.5 cpp — the guaranteed floor, no award space needed.
 5. **seats.aero at 4 seats** for Flying Blue / Virgin Atlantic partner space. Lowest odds,
    highest upside, costs one query.
@@ -208,6 +207,21 @@ doors that plausibly clear UR's floor on this route.
 **Before any transfer:** confirm the exact award is bookable and priced on the partner's
 own site. Transfers are irreversible, and neither Flying Blue nor Virgin Atlantic reliably
 offers a hold — load the `award-holds` skill before moving points.
+
+## Bags: the advantage belongs to Delta, not Southwest
+
+Corrected 2026-08-07. Two earlier versions of this brief credited Southwest with "two free
+checked bags per person, ~$280 round trip for four." **That is out of date — Southwest
+ended free checked bags for general passengers**, and the toolkit's own
+`skills/southwest/SKILL.md` still carried the old claim (now annotated).
+
+Meanwhile the **Delta SkyMiles Amex** covers a free first checked bag for the cardholder
+and companions on the same reservation. For this party that is up to 4 free bags on Delta
+and 0 free bags on Southwest.
+
+So the bag line item now **favors Delta by roughly $140–$280 round trip** for four people,
+reversing an argument that appeared twice in this brief. Verify both on southwest.com and
+against the current Delta Amex benefit terms before finalizing.
 
 ## Alternate airports
 

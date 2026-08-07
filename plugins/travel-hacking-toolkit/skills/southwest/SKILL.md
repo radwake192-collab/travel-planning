@@ -90,10 +90,24 @@ docker build -t sw-fares skills/southwest/
 
 | Fare | Points | Cash | Companion Pass | Change/Cancel | Bags |
 |------|--------|------|----------------|---------------|------|
-| Basic (Wanna Get Away) | Lowest | Lowest | **NO** | Credit only | 2 free |
-| Choice (Wanna Get Away Plus) | Low | Low | **YES** | Transferable credit | 2 free |
-| Choice Preferred (Anytime) | High | High | **YES** | Refundable | 2 free |
-| Choice Extra (Business Select) | Highest | Highest | **YES** | Refundable + priority | 2 free |
+| Basic (Wanna Get Away) | Lowest | Lowest | **NO** | Credit only | ⚠️ see below |
+| Choice (Wanna Get Away Plus) | Low | Low | **YES** | Transferable credit | ⚠️ see below |
+| Choice Preferred (Anytime) | High | High | **YES** | Refundable | ⚠️ see below |
+| Choice Extra (Business Select) | Highest | Highest | **YES** | Refundable + priority | ⚠️ see below |
+
+> ### ⚠️ BAGS: this table used to say "2 free" on every fare. That is no longer true.
+>
+> **Southwest ended free checked bags for general passengers.** Bags are now tied to fare
+> tier, elite status, and card holding rather than being universal. Free allowance now
+> depends on some combination of: top-tier fares (Choice Extra / Business Select),
+> A-List and A-List Preferred status, and Southwest Rapid Rewards credit card holding.
+>
+> **Do not quote a Southwest bag allowance from this file.** Confirm the current rule on
+> southwest.com for the specific fare being priced, and add bag fees into every all-in
+> comparison. "Bags fly free" was Southwest's single biggest structural advantage in a
+> cash-vs-cash comparison, and assuming it still applies materially overstates Southwest.
+>
+> Flagged 2026-08-07 after the stale claim produced a wrong family-of-four recommendation.
 
 **Critical for Companion Pass:** Only Choice and above qualify. Basic does NOT. This changes the CPP math significantly.
 

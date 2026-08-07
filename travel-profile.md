@@ -154,7 +154,7 @@ dynamic price, then the portal as the floor.
 | Airline incidental / travel credits | TODO | |
 | **Delta SkyMiles Amex card** | Confirmed held | Observed on a delta.com award booking 2026-08-07 — "Card Member Savings" and "TakeOff 15" both applied |
 | **TakeOff 15** — 15% off Delta award tickets | Delta SkyMiles Amex | Applies automatically. Verified live: 105,600 → 89,600 miles on a 4-passenger award. |
-| **First checked bag free**, cardholder + up to 8 companions on the same reservation | Delta SkyMiles Amex | Confirm the exact companion count for your card tier. Materially narrows Southwest's free-bag advantage. |
+| **First checked bag free**, cardholder + up to 8 companions on the same reservation | Delta SkyMiles Amex | Confirm the exact companion count for your tier. **This is now a Delta advantage, not a wash** — Southwest ended free checked bags for general passengers, so on bags Delta beats Southwest for this party. |
 | Southwest Companion Pass | TODO | Changes the math a lot if held |
 | Lounge access | TODO | |
 
