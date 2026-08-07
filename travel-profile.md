@@ -20,14 +20,38 @@ asking basic questions. Keep it current — stale balances produce bad cpp math.
 
 | Field | Value |
 |---|---|
-| Party size (default) | **2** |
+| Party size (default) | **5 people / 4 seats** |
 | Adults | 2 (self + wife) |
-| Children + ages at travel | None |
-| Lap infants | None |
+| Children | 2 — TODO: ages at time of travel |
+| Lap infants | 1 — TODO: date of birth |
 | Names as on ID / KTN / Global Entry | TODO (needed only at booking time) |
 
-Search award space for **2 seats**. Availability for 1 seat says nothing about 2, and on
-peak holiday dates the gap between 1 and 2 seats is where most plans die.
+**Search award space for 4 seats.** This is the single most important constraint in this
+file. Availability for 1 or 2 seats says nothing about 4, and on peak holiday dates
+4-seat saver space is where most award plans die. Any recommendation that hasn't been
+confirmed at 4 seats isn't a recommendation.
+
+### Why the ages matter
+
+Two TODOs above carry real money and need answering before booking:
+
+- **Lap infant's date of birth.** The infant must be under 2 **for every segment,
+  including the return**. A second birthday mid-trip means buying a seat for the flight
+  home. Domestically, lap infants fly free on Delta, Southwest, and United — but they
+  must still be added to the reservation, and most aircraft rows allow only one lap
+  infant because of the oxygen-mask count.
+- **The two children's ages.** Under 2 flies as a lap infant; 2 and over needs a purchased
+  seat at (usually) full fare. For Disney specifically, **under 3 gets into the parks
+  free**, ages 3–9 pay child pricing, and 10 and up pays full adult pricing. On a
+  multi-day park ticket that gap is worth several hundred dollars.
+
+### What a 4-seat party changes strategically
+
+Programs with fixed award charts and limited saver inventory (partner awards, saver space)
+get much harder at 4 seats. Programs with **revenue-linked pricing** — Southwest awards,
+Delta dynamic SkyMiles, and the Chase Travel portal — don't have a scarcity problem at
+all, only a price problem: if the seats are for sale, you can have them. For a family of
+four on peak holiday dates, that reliability is worth more than chasing a thin saver rate.
 
 ## Loyalty programs
 

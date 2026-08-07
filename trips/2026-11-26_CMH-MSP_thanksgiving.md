@@ -18,7 +18,7 @@ points_at_search:
 **Travel dates:** Out **Tuesday, November 24, 2026**, back **Monday, November 30, 2026**.
 Thanksgiving Day is Thu Nov 26. Six nights.
 **Cabin:** Economy
-**Travelers:** 2 adults
+**Travelers:** 5 people — 2 adults, 2 children, 1 lap infant. **4 purchased seats.**
 **Status:** Planning — strategy set, no live pricing pulled yet.
 
 ---
@@ -30,26 +30,44 @@ the Wednesday before Thanksgiving and the Sunday after. That pairing is typicall
 cheaper than Wed/Sun on both cash and award pricing, and it is the single largest lever on
 this trip. Nothing below is worth more than having picked these days.
 
-## Currency strategy — settled
+## Currency strategy — revised for 4 seats
 
-**Use Delta miles for this trip. Preserve Chase UR for Orlando.**
+At two travelers this was cleanly "spend the Delta miles." At **four seats it no longer
+is**, and the arithmetic is the reason:
 
-The reasoning, verified against `data/transfer-partners.json` (updated 2026-07-12):
+> 120,000 Delta miles ÷ 4 passengers = **30,000 per person round trip**, i.e. 15,000 each
+> way. Peak Thanksgiving domestic on dynamically-priced SkyMiles commonly runs 20K–40K+
+> each way per person. The realistic outcome is that **120K covers one to two of the four
+> tickets, not all four.**
 
-1. **Chase UR cannot transfer to Delta.** Chase's airline partners are Aer Lingus,
-   Aeroplan, Flying Blue, British Airways, Iberia, JetBlue, Singapore, Southwest, United,
-   and Virgin Atlantic. Delta is not among them, and among all major card currencies only
-   Amex MR reaches Delta. So the 120K Delta balance has a hard ceiling and **cannot be
-   topped up** mid-booking.
-2. **MSP is a Delta fortress hub** and Delta flies CMH–MSP nonstop. This route is close to
-   the ideal use case for a trapped Delta balance — an airline-strong market where Delta
-   should have both the best schedule and the deepest award inventory.
-3. **Chase UR is the flexible asset** and is worth more elsewhere: it reaches Hyatt at
-   1.4–1.7 cpp, which is the strongest redemption available on the Orlando trip.
+Chase UR cannot cover the gap — verified against `data/transfer-partners.json` (updated
+2026-07-12), Chase's airline partners are Aer Lingus, Aeroplan, Flying Blue, British
+Airways, Iberia, JetBlue, Singapore, Southwest, United, and Virgin Atlantic. **Delta is
+not among them**, and among major card currencies only Amex MR reaches Delta. So the
+Delta balance is capped at 120K with no way to top it up mid-booking.
 
-Spending Delta here and UR there uses each currency where it is strongest. The reverse —
-burning UR on Southwest for this trip while 120K Delta miles sit idle — wastes the
-flexible currency and strands the inflexible one.
+### The revised plan, in priority order
+
+1. **Southwest via Chase UR — most likely winner.** Serves both CMH and MSP. Award pricing
+   is pegged to the cash fare at roughly 1.2–1.3 cpp, so there is **no 4-seat saver-space
+   problem** — if the seats are for sale you can buy them with points. Two free checked
+   bags per person is worth roughly $280 round trip against Delta for a family of four,
+   and awards are fully refundable to points if plans change. 220K UR at ~1.3 cpp is
+   about $2,860 of Southwest fare, which should comfortably cover four holiday tickets.
+2. **Chase Travel portal.** Fixed 1.25 cpp (Preferred) or 1.5 cpp (Reserve) against any
+   airline's cash fare, including Delta. 220K UR is $2,750–$3,300 of travel. This is the
+   reliable floor and it still earns airline miles, since a portal booking is a paid
+   ticket.
+3. **Delta miles as a partial play.** Price the Delta award at 4 seats anyway. If it
+   comes in cheap enough that 120K covers all four round trips at 1.2 cpp or better, take
+   it. Otherwise consider putting 2 travelers on miles and 2 on cash — Delta lets you book
+   separate reservations on the same flights, though you should confirm seat assignments
+   together afterward so the family isn't split across the cabin.
+4. **Cash**, if it simply beats all of the above on the Tue/Mon dates.
+
+The Delta balance keeps its long-run logic — MSP is a Delta fortress hub with a CMH
+nonstop, and those miles have no other outlet — but "spend them here" only holds if the
+award price at 4 seats is actually reasonable. Don't force it.
 
 ## Do not count on the 100K signup bonus
 
@@ -59,64 +77,61 @@ on the 120K Delta / 220K UR that exist today. The 100K is a Disney-trip asset.
 
 ## Open questions
 
-1. **Which card is the 100K signup bonus on?** If Amex, that is the only route to more
-   Delta miles and changes the long-run picture considerably. Doesn't affect this booking.
-2. **Which Chase card(s)?** Sapphire Reserve vs Preferred sets the Chase Travel portal
-   rate (1.5 vs 1.25 cpp), which is the fallback if award space is bad.
-3. **Bags.** Two checked bags each on Southwest is free; on Delta it's roughly $70 per
-   person round trip. Changes the all-in comparison.
+1. **Lap infant's date of birth.** Must be under 2 through **Nov 30**, the return date.
+   A birthday during the trip means buying a fourth... fifth seat for the way home.
+2. **The two children's ages.** Anyone 2 or over needs their own purchased seat, which is
+   already assumed here (4 seats). Confirm neither child is young enough to fly as a
+   second lap infant — and note that most rows permit only one lap infant, so a second
+   would need to sit in a different row regardless.
+3. **Which Chase card(s)?** Sapphire Reserve vs Preferred sets the portal rate at 1.5 vs
+   1.25 cpp. Across 220K points that's a $550 swing, and it decides how competitive
+   option 2 is.
+4. **Which card is the 100K signup bonus on?** If Amex, that is the only route to more
+   Delta miles that exists. Won't post in time to affect this booking.
+5. **Bags.** Four people checking bags is roughly $280 round trip on Delta and $0 on
+   Southwest. That difference alone is a meaningful share of the fare gap.
+
+## Timing
+
+It is **August 2026**, roughly 3.5 months out. For a peak domestic holiday this is already
+the back half of the good booking window — holiday fares deteriorate from here. This is
+the higher-priority of the two trips.
 
 ## Search plan
 
-- **Delta award, first and most important.** Price CMH–MSP for **2 seats**, Nov 24 and
-  Nov 30. SkyMiles is dynamically priced with no award chart, so the number could be
-  anywhere from reasonable to absurd; peak holiday domestic commonly lands 25K–60K each
-  way per person. At 2 travelers × round trip, 120K covers a moderate price and does not
-  cover a bad one. Check ±1 day on both ends — Delta's dynamic pricing varies sharply
-  day to day.
-- **Delta cash, for the cpp denominator.** An award is only good relative to the cash
-  price. Delta SkyMiles floor is 1.0 cpp and ceiling 1.25 cpp per
-  `data/points-valuations.json`; below ~1.0 cpp, pay cash and keep the miles.
-- **Southwest, by hand via the `southwest` skill.** Serves both CMH and MSP, appears in no
-  GDS and no API, and is the fallback if Delta award pricing is bad. Southwest awards are
-  pegged to cash fare at roughly 1.2–1.3 cpp, are fully refundable to points on cancel,
-  and include two free checked bags each.
+Every search below must be run at **4 seats**. A price quoted at 1 or 2 seats is not
+usable here, and per-seat prices commonly rise as the cheap fare buckets sell out.
+
+- **Southwest, by hand via the `southwest` skill.** Now the lead candidate, not the
+  fallback. Southwest is in no GDS and no API, so nothing else will surface it. Price 4
+  seats CMH–MSP on Nov 24 / Nov 30 in both cash and Rapid Rewards, and confirm Southwest's
+  schedule is open that far out.
+- **Delta award at 4 seats,** Nov 24 and Nov 30, ±1 day each end — dynamic pricing moves
+  sharply day to day. Also price the 2-on-miles / 2-on-cash split.
+- **Delta cash, for the cpp denominator.** An award is only good relative to cash. Delta's
+  floor is 1.0 cpp and ceiling 1.25 cpp per `data/points-valuations.json`.
 - **Cash across the board:** Duffel, Ignav, Skiplagged, Kiwi, Google Flights.
-- **Chase Travel portal** as the last resort — fixed 1.25–1.5 cpp on the cash fare,
-  which reliably beats a bad Delta award redemption and still earns Delta miles on a
-  paid ticket.
+- **Chase Travel portal** at whichever rate the card earns, as the reliable floor.
+- **seats.aero across all programs,** unfiltered, in case a partner rate beats Delta's own
+  dynamic price. Expect thin 4-seat saver space on peak holiday dates.
 - **No transfer bonus is relevant.** The only active Chase bonus is 70% to IHG, which
   Frequent Miler explicitly says to skip, and it's a hotel program with no bearing here.
 
 ## Decision rule
 
-Compute cpp on the Delta award against the all-in cash price including bags. Above
-~1.2 cpp, book the Delta award and the trapped miles have done their job. Between 1.0 and
-1.2, it's close — lean award anyway, because these miles have no alternative use. Below
-1.0 cpp, pay cash or use the Chase portal and keep the SkyMiles for a Delta-strong route
-later.
+Compare four all-in totals for 4 seats, **including checked bags**:
 
-## Timing
+| Option | Currency | Rough capacity of the balance |
+|---|---|---|
+| Southwest award | Chase UR → Southwest 1:1 | ~$2,860 of fare at 1.3 cpp |
+| Chase portal | Chase UR direct | $2,750–$3,300 at 1.25–1.5 cpp |
+| Delta award | Delta SkyMiles | 120K — likely 1–2 tickets, not 4 |
+| Cash | — | — |
 
-It is **August 2026**, roughly 3.5 months out. For a peak domestic holiday this is
-already the back half of the good booking window — holiday fares and saver award space
-both tend to deteriorate from here. Treat this trip as the higher-priority of the two.
-
-## Search plan
-
-Run via `plan-trip` or `compare-flights` once the profile has party size and balances:
-
-- **Cash, in parallel:** Duffel and Ignav (need API keys), plus the free Skiplagged and
-  Kiwi MCP servers, plus Google Flights.
-- **Southwest separately.** Southwest is in no GDS and no API — it needs the dedicated
-  `southwest` skill. It serves both CMH and MSP, so it must be checked by hand; a
-  comparison that omits it is incomplete. If a Companion Pass is in play, that likely
-  decides the trip on its own.
-- **Award:** seats.aero across *all* programs, not filtered to one upfront. MSP is a
-  Delta fortress hub, so expect Delta-heavy inventory and dynamic (not saver) pricing;
-  check partner options and nearby-airport alternates before accepting a bad rate.
-- **Cross-reference** transfer partners and any live transfer bonuses before moving
-  points anywhere.
+Take the lowest real out-of-pocket cost for four seats plus bags. If Delta's 4-seat award
+price clears 1.2 cpp, use the miles and it's a clean outcome. If it doesn't, Southwest or
+the portal wins and the Delta balance waits for a better Delta-strong route — that's a
+fine result, not a failure.
 
 ## Alternate airports
 
