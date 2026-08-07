@@ -32,6 +32,35 @@ Mid-January — after New Year crowds clear, before Presidents' Day — is one o
 stretches of the Orlando year, and Monday–Friday avoids weekend fare premiums on both
 ends. There's room to optimize rather than rush.
 
+## VERIFIED QUOTE — delta.com, 2026-08-07
+
+Searched **Jan 11–16** (note: brief says Jan 15; Jan 16 is a Saturday).
+
+| | Value |
+|---|---|
+| Award, 4 passengers | **89,600 miles + $44.80** (after TakeOff 15, from 105,600) |
+| Cash, 4 passengers | **$1,476** ($369 each) |
+| Cash saved | **$1,431.20** |
+| **cpp** | **1.60** |
+
+Delta's band is 1.0 floor / 1.25 ceiling per `data/points-valuations.json`, so **1.60
+beats the ceiling** — a strong SkyMiles redemption, and affordable against the 100,026
+balance with 10,426 to spare.
+
+**Decision: the SkyMiles go here.** Thanksgiving priced at 106,400 miles for 4, which
+exceeds the balance outright.
+
+### Open items before booking
+
+- **Jan 18, 2027 is MLK Day**, so a Jan 16 (Saturday) return rides the front of MLK
+  weekend. Price a **Jan 15 (Friday)** return in both cash and miles — likely the largest
+  remaining saving, and it matches the originally stated dates.
+- **Confirm $369 is a Basic-to-Basic comparison.** The award is Main Basic; if $369 buys
+  Main Classic, the real cpp is lower.
+- **Main Basic means no seat selection** for a party of five with a lap infant. Main
+  Classic is +6,200 × 4 = 24,800 miles → 114,400 total, which the balance cannot cover.
+- Outbound was 1 stop / 4h30m against a nonstop 2h21m return. Price the nonstop outbound.
+
 ## Currency strategy
 
 Available for this trip: **220K Chase UR**, plus the **~100K signup bonus** expected

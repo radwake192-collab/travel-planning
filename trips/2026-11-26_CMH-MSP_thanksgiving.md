@@ -26,6 +26,43 @@ Thanksgiving Day is Thu Nov 26. Six nights.
 
 ---
 
+## VERIFIED QUOTE — delta.com, 2026-08-07
+
+Searched **Nov 21–28**, not the Nov 24–30 in this brief's frontmatter. Confirm which
+window you actually want; Sat-to-Sat is a genuinely smart holiday pattern that dodges both
+the Wednesday-before and Sunday-after peaks, but it's a 7-night trip, not 6.
+
+Best outbound shown: **DL3753, Sat Nov 21, 7:05a–8:18a, nonstop, 2h13m** (SkyWest dba
+Delta Connection).
+
+| | Value |
+|---|---|
+| Round trip **per passenger** | **26,600 miles + $12** (after 15% Card Member Savings, from 31,400) |
+| × 4 passengers | **106,400 miles + $48** |
+| Balance | **100,026 miles** |
+| **Shortfall** | **6,374 miles — not affordable at 4 passengers** |
+
+### This settles the allocation question
+
+Thanksgiving cannot be booked on miles for four people. Orlando can (89,600, leaving
+10,426). So the SkyMiles go to Orlando and **this trip goes on Chase points or cash.**
+
+For the record, had the balance covered it, Thanksgiving would need cash above these
+levels to beat Orlando's verified 1.60 cpp:
+
+| cpp | Cash per person | Cash for 4 |
+|---|---|---|
+| 1.00 (Delta floor) | $278.00 | $1,112 |
+| 1.25 (Delta ceiling) | $344.50 | $1,378 |
+| **1.60 (Orlando benchmark)** | **$437.60** | **$1,750** |
+
+If Thanksgiving cash comes in above ~$438/person, it *is* the better redemption on cpp —
+but only reachable by putting 3 passengers on miles (79,800, leaving 20,226) and buying
+the 4th ticket in cash. Worth pricing before dismissing.
+
+26,600 miles round trip for a nonstop at Thanksgiving is a reasonable price, not a
+gouge — the constraint here is the balance, not the rate.
+
 ## The dates are the good ones
 
 Tue-out / Mon-back deliberately straddles the two worst days to fly in the American year:
