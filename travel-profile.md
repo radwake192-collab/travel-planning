@@ -102,7 +102,7 @@ figures all draw on the **same** 220K pool — spending it in one program spends
 
 | Program | Direct | Via Chase UR (1:1) | Effective |
 |---|---|---|---|
-| Delta SkyMiles (the *currency*) | 120,000 | ✗ no path | 120,000 |
+| Delta SkyMiles (the *currency*) | 100,026 | ✗ no path | 100,026 |
 | Air France-KLM Flying Blue | 0 | 220,000 | 220,000 |
 | Virgin Atlantic Flying Club | 0 | 220,000 | 220,000 |
 | Southwest Rapid Rewards | 0 | 220,000 | 220,000 |
@@ -115,12 +115,12 @@ figures all draw on the **same** 220K pool — spending it in one program spends
 ### Delta access: four doors, not one
 
 **Do not confuse the SkyMiles balance with access to Delta flights.** The SkyMiles
-*currency* is capped at 120K and only Amex MR can add to it. But **Delta-operated seats
+*currency* is capped at 100,026 and only Amex MR can add to it. But **Delta-operated seats
 are reachable four different ways**, three of them funded by Chase:
 
 | Door | Currency | Inventory it can see | Pricing |
 |---|---|---|---|
-| Delta SkyMiles direct | 120K SkyMiles | **All Delta seats** — no capacity control | Dynamic, often poor value |
+| Delta SkyMiles direct | 100,026 SkyMiles | **All Delta seats** — no capacity control | Dynamic; verified 1.60 cpp on CMH–MCO |
 | Flying Blue | Chase UR 1:1 | Delta *partner saver* space only | Dynamic + monthly Promo Rewards |
 | Virgin Atlantic Flying Club | Chase UR 1:1 | Delta *partner saver* space only | Chart-based per repo data — verify |
 | Chase Travel portal | Chase UR direct | Any purchasable seat — no award space needed | Fixed 1.25–1.5 cpp |
