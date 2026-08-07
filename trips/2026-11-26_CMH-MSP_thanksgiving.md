@@ -148,6 +148,54 @@ cheaper than Delta Main Classic.
   of five that gets scattered has the same problem on either airline.
 - **Confirm Sun Country's lap-infant policy** before assuming the infant flies free.
 
+## Driving instead
+
+**CMH–MSP is 625 miles great circle** (`data/airport-coordinates.json` via
+`scripts/calc_distance.py`), roughly **730 road miles** each way — about **1,460 round
+trip** and **~12 hours behind the wheel each way**, before stops.
+
+| Framing | Round-trip cost |
+|---|---|
+| Fuel only, driven straight through | **~$250** |
+| Fuel + 1 en-route hotel night each way + road food | **~$730** |
+| Full economic cost (~$0.67/mi incl. wear) + nights + food | **~$1,460** |
+
+Against Delta Main Basic at **$1,476** and Main Classic at **$1,996**.
+
+### Answer: yes, clearly cheaper on cash
+
+On out-of-pocket money it isn't close. Even budgeting two en-route hotel nights and road
+meals, ~$730 is **half** of Main Basic and **a third** of Main Classic. You'd have to load
+in full vehicle depreciation before flying becomes competitive — and most families don't
+experience depreciation as a Thanksgiving expense.
+
+Driving also **eliminates several costs entirely**: no bag fees at any tier, no seat
+selection, no Sun Country frequency gamble, no Main Basic vs Main Classic decision, and no
+rental car at the destination. Luggage becomes unlimited, which for a 7-night trip with an
+infant is a genuine convenience, not just a saving.
+
+And it doesn't touch Orlando: 89,600 SkyMiles still covers that trip at 1.60 cpp either
+way.
+
+### What you're actually trading
+
+- **~24 hours of driving round trip with a lap infant and two children.** Realistically 13–14
+  hours door to door each way once stops are counted, which is why the table budgets an
+  overnight in each direction. That is the real price, and it isn't measured in dollars.
+- **Late-November weather across Indiana, Illinois, and Wisconsin.** Thanksgiving-week
+  snow and ice on I-65/I-90/I-94 is a routine occurrence, not a tail risk. A storm turns a
+  12-hour drive into something considerably worse, with no rebooking option.
+- **Two extra travel days**, roughly, versus a 2-hour flight.
+
+### The judgment
+
+If the $1,476 is the sticking point, **driving is the honest answer and saves ~$750–$1,200
+realistically.** If the drive is the sticking point, Delta Main Basic plus the $520 for
+Main Classic seats is the cost of not doing it.
+
+The one framing that doesn't hold up: driving to save money and then still buying Main
+Classic seats "for comfort" is choosing the expensive half of both options.
+
 ## The dates are the good ones
 
 Tue-out / Mon-back deliberately straddles the two worst days to fly in the American year:
