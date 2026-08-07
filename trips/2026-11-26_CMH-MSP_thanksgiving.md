@@ -9,7 +9,7 @@ booked_option: null
 scope: flights_only     # lodging is already handled
 tags: [thanksgiving, domestic, holiday-peak, flights-only]
 points_at_search:
-  delta_skymiles: 120000
+  delta_skymiles: 100026    # verified on delta.com 2026-08-07
   chase_ultimate_rewards: 220000
 ---
 
@@ -20,7 +20,7 @@ points_at_search:
 Thanksgiving Day is Thu Nov 26. Six nights.
 **Cabin:** Economy
 **Travelers:** 5 people — 2 adults, 2 children, 1 lap infant. **4 purchased seats.**
-**Status:** Planning — strategy set, no live pricing pulled yet.
+**Status:** Researched — Delta priced live 2026-08-07. Award ruled out on balance; decision is between Chase points and cash.
 
 > **Scope: flights only.** Lodging is already sorted. Do not search hotels for this trip.
 
@@ -91,7 +91,7 @@ dates*:
 |---|---|---|---|
 | Chase portal | 220K UR @ 1.25–1.5 cpp | Any seat that's for sale | **Yes — guaranteed** |
 | Southwest | 220K UR → 1:1 | Any seat that's for sale | **Yes — guaranteed** |
-| Delta SkyMiles | 120K, no top-up | All Delta seats, no capacity control | Yes, but 120K likely covers only 1–2 of 4 |
+| Delta SkyMiles | 100,026, no top-up | All Delta seats, no capacity control | **No — priced at 106,400 for 4, short by 6,374** |
 | Flying Blue | 220K UR → 1:1 | Delta **partner saver** space only | Unlikely, but the best value if it exists |
 | Virgin Atlantic | 220K UR → 1:1 | Delta **partner saver** space only | Unlikely, but the best value if it exists |
 
@@ -100,15 +100,14 @@ is thinnest on peak holiday dates, and needing **four** of it is the hard part. 
 Blue and Virgin Atlantic are genuinely the highest-value options *and* the least likely to
 come through at this party size. That makes them cheap to check and wrong to count on.
 
-### Run this first (nothing below has been checked live)
+### Still unchecked: the partner-saver question
 
-No award search has been run for this trip. The planning container had no
-`SEATS_AERO_API_KEY` and its network policy blocked seats.aero, delta.com, and
-southwest.com outright, so every number in this brief is derived from
-`data/*.json` reference files — **not one is a live price or a confirmed seat.**
+Delta's own pricing is now verified (see the quote at the top) and rules the award out on
+balance. **Southwest, the Chase portal, Flying Blue, and Virgin Atlantic remain
+unpriced** — and one of them is now going to win this trip.
 
-From a local shell with the key set, this is the query that settles the partner-saver
-question. `flyingblue` and `virginatlantic` are the two Chase-reachable SkyTeam doors:
+From a local shell with the key set, this query covers the two Chase-reachable SkyTeam
+doors in one call:
 
 ```bash
 curl -s -H "Partner-Authorization: $SEATS_AERO_API_KEY" \
@@ -127,28 +126,25 @@ availability is common.
 
 ### Plan
 
-1. **Run seats.aero first, at 4 seats.** One query covers both Flying Blue and Virgin
-   Atlantic and settles whether Delta partner saver space exists on Nov 24 / Nov 30. If
-   four seats show up, that is very likely the best value on the table — take it. Verify
-   live on the airline site before transferring, since transfers are irreversible.
-2. **Price Delta direct** for the dynamic SkyMiles number at 4 seats. 120K covers
-   roughly 30K per person round trip; peak holiday domestic often exceeds that. Consider
-   2-on-miles / 2-on-cash if it's close.
+1. ~~Price Delta direct.~~ **Done 2026-08-07: 106,400 miles for 4, balance is 100,026.
+   Ruled out** unless splitting 3-on-miles + 1-cash.
+2. **Get the Delta cash price** for the same flights. It's the denominator for every
+   remaining comparison, and it decides whether the 3-plus-1 split is worth doing.
 3. **Southwest via the `southwest` skill.** Revenue-linked awards, so no saver-space
-   problem, plus two free checked bags per person — about $280 round trip for four people
-   against Delta.
-4. **Chase portal** as the guaranteed floor: fixed 1.25–1.5 cpp on any airline including
-   Delta, no award space required, and it still earns miles as a paid ticket.
+   problem at 4 seats. Note the bag advantage is smaller than previously assumed — the
+   Delta SkyMiles Amex gives a free first checked bag to the cardholder and companions on
+   the same reservation.
+4. **Chase portal** at 1.25–1.5 cpp — the guaranteed floor, no award space needed.
+5. **seats.aero at 4 seats** for Flying Blue / Virgin Atlantic partner space. Lowest odds,
+   highest upside, costs one query.
 
-The realistic expectation is that option 1 fails on availability and the decision lands
-between Southwest and the portal — but option 1 costs one search and has the highest
-upside, so it goes first.
+With the Delta award out, this trip is now most likely Southwest or the Chase portal.
 
 ## Do not count on the 100K signup bonus
 
 The wife's ~100K bonus is expected "in a few months," which realistically means Oct–Nov
 after minimum spend clears. This trip needs booking **now**, in August. Plan and book it
-on the 120K Delta / 220K UR that exist today. The 100K is a Disney-trip asset.
+on the 220K Chase UR that exists today — the SkyMiles are going to Orlando.
 
 ## Open questions
 
