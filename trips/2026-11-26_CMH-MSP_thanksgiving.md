@@ -84,6 +84,70 @@ than by default.
 Confirming which Chase card is held decides a $550-equivalent swing across 220K points and
 is still a TODO in `travel-profile.md`.
 
+## Sun Country vs Delta — the bag-fee question
+
+Google Flights (2026-08-07, Nov 21–28) — **totals are for 4 passengers**, confirmed by
+Delta's $1,476 matching 4 × $369 exactly:
+
+| Carrier | Total (4 pax) | Per person | Flight | Included bags |
+|---|---|---|---|---|
+| **Sun Country** | **$765** | $191.25 | 6:20p–7:18p nonstop, **1h58m** | **0 carry-on, 0 checked** |
+| Delta | $1,476 | $369.00 | 4:17p–5:25p nonstop, 2h08m | 5 carry-on, 0 checked |
+| Delta | $1,476 | $369.00 | 6:52p–8:02p nonstop, 2h10m | 5 carry-on, 0 checked |
+| Delta | $1,756 | $439.00 | 11:08a–12:15p nonstop, 2h07m | 5 carry-on, 0 checked |
+
+### The breakeven
+
+**Sun Country's $711 head start is the entire budget for every fee they charge.**
+
+- $711 ÷ 4 passengers = **$177.75 per person round trip**
+- = **$88.88 per person, per direction**, covering carry-on *and* checked bags
+
+Sun Country charges for the overhead-bin carry-on, not just checked bags. A free personal
+item under the seat is typically still included — confirm.
+
+### Scenarios (checked assumed ~$45/bag/direction, carry-on ~$40)
+
+| What you bring | Sun Country all-in | vs Delta Basic $1,476 | vs Delta Classic $1,996 |
+|---|---|---|---|
+| Personal items only + 2 checked | $945 | **−$531** | −$1,051 |
+| 4 carry-ons + 2 checked | $1,265 | **−$211** | −$731 |
+| Personal items only + 4 checked | $1,125 | **−$351** | −$871 |
+| 4 carry-ons + 4 checked | $1,445 | **−$31** | −$551 |
+
+Fee levels are illustrative — **this environment cannot reach suncountry.com to verify
+them.** Price the real fees at booking; they are usually cheaper prepaid than at the
+airport, and that spread matters at this margin.
+
+### The catch Delta's price hides
+
+**Your Delta SkyMiles Amex gives a free first checked bag to the cardholder and companions
+on the same reservation.** So Delta's $1,476 likely already includes 4 checked bags, while
+every Sun Country row above has to pay for them. That's what compresses the gap in the
+bottom row to $31.
+
+### Verdict
+
+**Against Main Basic, it's close enough that schedule risk decides it.** If you check bags
+for four, the saving lands somewhere between $30 and $210 — real money, but thin
+compensation for the exposure below.
+
+**Against Main Classic ($1,996), Sun Country wins comfortably** even fully loaded, by
+$550–$1,050. If seat selection is what you want, Sun Country plus paid seats is likely
+cheaper than Delta Main Classic.
+
+### The non-price factors, which matter more here
+
+- **Frequency.** Delta shows at least four CMH–MSP nonstops a day. Sun Country flies this
+  route a few times a week. **On a Thanksgiving cancellation, Delta rebooks you in hours
+  and Sun Country may not have a seat for days** — with two kids and a lap infant, over a
+  holiday, that asymmetry is the real cost.
+- **Sun Country is faster** — 1h58m vs 2h08m — and the 6:20p departure beats the 7:05a
+  award flight for a family with small children.
+- **Seat selection costs extra on Sun Country too.** Include it in the comparison; a party
+  of five that gets scattered has the same problem on either airline.
+- **Confirm Sun Country's lap-infant policy** before assuming the infant flies free.
+
 ## The dates are the good ones
 
 Tue-out / Mon-back deliberately straddles the two worst days to fly in the American year:
