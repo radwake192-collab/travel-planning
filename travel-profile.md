@@ -102,7 +102,9 @@ figures all draw on the **same** 220K pool — spending it in one program spends
 
 | Program | Direct | Via Chase UR (1:1) | Effective |
 |---|---|---|---|
-| Delta SkyMiles | 120,000 | ✗ **no path** | **120,000 — hard cap** |
+| Delta SkyMiles (the *currency*) | 120,000 | ✗ no path | 120,000 |
+| Air France-KLM Flying Blue | 0 | 220,000 | 220,000 |
+| Virgin Atlantic Flying Club | 0 | 220,000 | 220,000 |
 | Southwest Rapid Rewards | 0 | 220,000 | 220,000 |
 | United MileagePlus | 0 | 220,000 | 220,000 |
 | JetBlue TrueBlue | 0 | 220,000 | 220,000 |
@@ -110,10 +112,38 @@ figures all draw on the **same** 220K pool — spending it in one program spends
 | IHG One Rewards | 0 | 220,000 | 220,000 |
 | Marriott Bonvoy | 0 | 220,000 | 220,000 |
 
-**The Delta balance is a closed silo.** No credit card currency you hold reaches Delta, so
-120K is the ceiling — there is no topping it up mid-booking. Treat those miles as a
-fixed, spend-it-on-Delta-or-nothing asset and deploy them where Delta is genuinely the
-best carrier, rather than hoarding them.
+### Delta access: four doors, not one
+
+**Do not confuse the SkyMiles balance with access to Delta flights.** The SkyMiles
+*currency* is capped at 120K and only Amex MR can add to it. But **Delta-operated seats
+are reachable four different ways**, three of them funded by Chase:
+
+| Door | Currency | Inventory it can see | Pricing |
+|---|---|---|---|
+| Delta SkyMiles direct | 120K SkyMiles | **All Delta seats** — no capacity control | Dynamic, often poor value |
+| Flying Blue | Chase UR 1:1 | Delta *partner saver* space only | Dynamic + monthly Promo Rewards |
+| Virgin Atlantic Flying Club | Chase UR 1:1 | Delta *partner saver* space only | Chart-based per repo data — verify |
+| Chase Travel portal | Chase UR direct | Any purchasable seat — no award space needed | Fixed 1.25–1.5 cpp |
+
+Both Flying Blue and Virgin Atlantic are full SkyTeam members that book Delta online.
+`data/partner-awards.json` says it plainly in the Delta entry: *"Often poor value for
+SkyMiles redemptions. Better to use Flying Blue or Korean Air SKYPASS to book
+Delta/SkyTeam flights,"* and in the Flying Blue entry: *"Great for Delta metal (often
+cheaper than SkyMiles)."* Korean Air SKYPASS is not reachable from Chase, so Flying Blue
+and Virgin Atlantic are the two partner doors available here.
+
+**The real tradeoff is inventory, not price.** SkyMiles can book any Delta seat at a bad
+rate. The partner programs get a much better rate but can only touch the saver space Delta
+chooses to release, which is thin — and thinnest exactly when a party needs 4 seats on
+peak dates. The portal sidesteps award space entirely at a guaranteed fixed rate.
+
+Search order for any Delta route: **seats.aero first** (it covers Flying Blue and Virgin
+Atlantic and answers the partner-space question in one query), then Delta direct for the
+dynamic price, then the portal as the floor.
+
+> ⚠️ `data/partner-awards.json` was last updated 2026-03-31 and is past its 90-day TTL.
+> Virgin Atlantic in particular is listed as a fixed chart; verify current Delta pricing
+> live before committing to a transfer, since transfers are irreversible.
 
 ### Card benefits worth stacking
 
@@ -130,7 +160,7 @@ best carrier, rather than hoarding them.
 | Field | Value |
 |---|---|
 | Cash vs points default | Best of both (change if you prefer one) |
-| Currency allocation rule | Delta miles → Delta-strong routes (MSP, DTW, ATL, SLC hubs). Chase UR → everything else, especially Hyatt. See the reasoning in the effective-balance table above. |
+| Currency allocation rule | Chase UR is the workhorse and reaches Delta metal three ways (Flying Blue, Virgin Atlantic, portal). SkyMiles are the narrow asset — spend them when Delta's own dynamic price beats every Chase-funded door. See the four-doors table above. |
 | Cabin default (domestic) | Economy |
 | Cabin default (long-haul) | TODO |
 | Nonstop preference | TODO — strong / prefer / don't care |

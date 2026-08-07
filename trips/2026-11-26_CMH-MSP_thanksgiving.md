@@ -30,44 +30,54 @@ the Wednesday before Thanksgiving and the Sunday after. That pairing is typicall
 cheaper than Wed/Sun on both cash and award pricing, and it is the single largest lever on
 this trip. Nothing below is worth more than having picked these days.
 
-## Currency strategy — revised for 4 seats
+## Currency strategy — four doors to Delta
 
-At two travelers this was cleanly "spend the Delta miles." At **four seats it no longer
-is**, and the arithmetic is the reason:
+Two corrections to an earlier version of this brief, both material.
 
-> 120,000 Delta miles ÷ 4 passengers = **30,000 per person round trip**, i.e. 15,000 each
-> way. Peak Thanksgiving domestic on dynamically-priced SkyMiles commonly runs 20K–40K+
-> each way per person. The realistic outcome is that **120K covers one to two of the four
-> tickets, not all four.**
+**Correction 1: Chase reaches Delta metal.** Chase cannot mint SkyMiles — only Amex MR
+does that — but Delta-operated seats are bookable with Chase points three separate ways:
+**Flying Blue** (1:1), **Virgin Atlantic Flying Club** (1:1), and the **Chase Travel
+portal** at a fixed rate. Both partner programs are full SkyTeam members that book Delta
+online. `data/partner-awards.json` is explicit: Delta's own entry says *"Often poor value
+for SkyMiles redemptions. Better to use Flying Blue or Korean Air SKYPASS,"* and Flying
+Blue's says *"Great for Delta metal (often cheaper than SkyMiles)."* (Korean Air SKYPASS
+is not a Chase partner, so it's out of reach here.)
 
-Chase UR cannot cover the gap — verified against `data/transfer-partners.json` (updated
-2026-07-12), Chase's airline partners are Aer Lingus, Aeroplan, Flying Blue, British
-Airways, Iberia, JetBlue, Singapore, Southwest, United, and Virgin Atlantic. **Delta is
-not among them**, and among major card currencies only Amex MR reaches Delta. So the
-Delta balance is capped at 120K with no way to top it up mid-booking.
+**Correction 2: the constraint is inventory, not currency.** The question was never
+"can Chase pay for Delta." It's *which door can seat four people on peak Thanksgiving
+dates*:
 
-### The revised plan, in priority order
+| Door | Currency | Inventory visible | 4 seats on Nov 24/30? |
+|---|---|---|---|
+| Chase portal | 220K UR @ 1.25–1.5 cpp | Any seat that's for sale | **Yes — guaranteed** |
+| Southwest | 220K UR → 1:1 | Any seat that's for sale | **Yes — guaranteed** |
+| Delta SkyMiles | 120K, no top-up | All Delta seats, no capacity control | Yes, but 120K likely covers only 1–2 of 4 |
+| Flying Blue | 220K UR → 1:1 | Delta **partner saver** space only | Unlikely, but the best value if it exists |
+| Virgin Atlantic | 220K UR → 1:1 | Delta **partner saver** space only | Unlikely, but the best value if it exists |
 
-1. **Southwest via Chase UR — most likely winner.** Serves both CMH and MSP. Award pricing
-   is pegged to the cash fare at roughly 1.2–1.3 cpp, so there is **no 4-seat saver-space
-   problem** — if the seats are for sale you can buy them with points. Two free checked
-   bags per person is worth roughly $280 round trip against Delta for a family of four,
-   and awards are fully refundable to points if plans change. 220K UR at ~1.3 cpp is
-   about $2,860 of Southwest fare, which should comfortably cover four holiday tickets.
-2. **Chase Travel portal.** Fixed 1.25 cpp (Preferred) or 1.5 cpp (Reserve) against any
-   airline's cash fare, including Delta. 220K UR is $2,750–$3,300 of travel. This is the
-   reliable floor and it still earns airline miles, since a portal booking is a paid
-   ticket.
-3. **Delta miles as a partial play.** Price the Delta award at 4 seats anyway. If it
-   comes in cheap enough that 120K covers all four round trips at 1.2 cpp or better, take
-   it. Otherwise consider putting 2 travelers on miles and 2 on cash — Delta lets you book
-   separate reservations on the same flights, though you should confirm seat assignments
-   together afterward so the family isn't split across the cabin.
-4. **Cash**, if it simply beats all of the above on the Tue/Mon dates.
+Delta releases only a slice of its inventory to partners as saver award space. That slice
+is thinnest on peak holiday dates, and needing **four** of it is the hard part. So Flying
+Blue and Virgin Atlantic are genuinely the highest-value options *and* the least likely to
+come through at this party size. That makes them cheap to check and wrong to count on.
 
-The Delta balance keeps its long-run logic — MSP is a Delta fortress hub with a CMH
-nonstop, and those miles have no other outlet — but "spend them here" only holds if the
-award price at 4 seats is actually reasonable. Don't force it.
+### Plan
+
+1. **Run seats.aero first, at 4 seats.** One query covers both Flying Blue and Virgin
+   Atlantic and settles whether Delta partner saver space exists on Nov 24 / Nov 30. If
+   four seats show up, that is very likely the best value on the table — take it. Verify
+   live on the airline site before transferring, since transfers are irreversible.
+2. **Price Delta direct** for the dynamic SkyMiles number at 4 seats. 120K covers
+   roughly 30K per person round trip; peak holiday domestic often exceeds that. Consider
+   2-on-miles / 2-on-cash if it's close.
+3. **Southwest via the `southwest` skill.** Revenue-linked awards, so no saver-space
+   problem, plus two free checked bags per person — about $280 round trip for four people
+   against Delta.
+4. **Chase portal** as the guaranteed floor: fixed 1.25–1.5 cpp on any airline including
+   Delta, no award space required, and it still earns miles as a paid ticket.
+
+The realistic expectation is that option 1 fails on availability and the decision lands
+between Southwest and the portal — but option 1 costs one search and has the highest
+upside, so it goes first.
 
 ## Do not count on the 100K signup bonus
 
@@ -99,39 +109,44 @@ the higher-priority of the two trips.
 
 ## Search plan
 
-Every search below must be run at **4 seats**. A price quoted at 1 or 2 seats is not
-usable here, and per-seat prices commonly rise as the cheap fare buckets sell out.
+Every search must be run at **4 seats**. A price quoted at 1 or 2 seats is not usable
+here, and per-seat prices commonly rise as cheap fare buckets sell out.
 
-- **Southwest, by hand via the `southwest` skill.** Now the lead candidate, not the
-  fallback. Southwest is in no GDS and no API, so nothing else will surface it. Price 4
-  seats CMH–MSP on Nov 24 / Nov 30 in both cash and Rapid Rewards, and confirm Southwest's
-  schedule is open that far out.
-- **Delta award at 4 seats,** Nov 24 and Nov 30, ±1 day each end — dynamic pricing moves
-  sharply day to day. Also price the 2-on-miles / 2-on-cash split.
-- **Delta cash, for the cpp denominator.** An award is only good relative to cash. Delta's
-  floor is 1.0 cpp and ceiling 1.25 cpp per `data/points-valuations.json`.
+- **seats.aero across all programs, unfiltered, 4 seats.** Runs first. Covers Flying Blue
+  and Virgin Atlantic in one query and answers the Delta partner-saver question directly.
+  Do not pre-filter to one program.
+- **Delta direct** for the dynamic SkyMiles price at 4 seats, Nov 24 / Nov 30, ±1 day each
+  end — dynamic pricing moves sharply day to day.
+- **Southwest, by hand via the `southwest` skill.** In no GDS and no API, so nothing else
+  surfaces it. Price 4 seats in both cash and Rapid Rewards, and confirm the schedule is
+  open that far out.
 - **Cash across the board:** Duffel, Ignav, Skiplagged, Kiwi, Google Flights.
-- **Chase Travel portal** at whichever rate the card earns, as the reliable floor.
-- **seats.aero across all programs,** unfiltered, in case a partner rate beats Delta's own
-  dynamic price. Expect thin 4-seat saver space on peak holiday dates.
+- **Chase Travel portal** at whichever rate the card earns.
 - **No transfer bonus is relevant.** The only active Chase bonus is 70% to IHG, which
   Frequent Miler explicitly says to skip, and it's a hotel program with no bearing here.
 
 ## Decision rule
 
-Compare four all-in totals for 4 seats, **including checked bags**:
+Compare all-in totals for 4 seats **including checked bags**, and compute cpp on every
+points option against the cash fare:
 
-| Option | Currency | Rough capacity of the balance |
-|---|---|---|
-| Southwest award | Chase UR → Southwest 1:1 | ~$2,860 of fare at 1.3 cpp |
-| Chase portal | Chase UR direct | $2,750–$3,300 at 1.25–1.5 cpp |
-| Delta award | Delta SkyMiles | 120K — likely 1–2 tickets, not 4 |
-| Cash | — | — |
+| Option | Currency | Capacity of the balance | Availability risk |
+|---|---|---|---|
+| Flying Blue / Virgin Atlantic | 220K UR 1:1 | Best value if space exists | **High** — partner saver only |
+| Southwest award | 220K UR 1:1 | ~$2,860 of fare at 1.3 cpp | None |
+| Chase portal | 220K UR direct | $2,750–$3,300 at 1.25–1.5 cpp | None |
+| Delta award | 120K SkyMiles | ~1–2 of the 4 tickets | None, but price is dynamic |
+| Cash | — | — | None |
 
-Take the lowest real out-of-pocket cost for four seats plus bags. If Delta's 4-seat award
-price clears 1.2 cpp, use the miles and it's a clean outcome. If it doesn't, Southwest or
-the portal wins and the Delta balance waits for a better Delta-strong route — that's a
-fine result, not a failure.
+Take the lowest real out-of-pocket cost for four seats plus bags. Chase UR's own floor is
+1.7 cpp per `data/points-valuations.json`, so any UR redemption below that is spending a
+premium currency at a discount — the portal at 1.25–1.5 cpp is a *floor*, not a win.
+That's the argument for checking Flying Blue and Virgin Atlantic first: they're the only
+doors that plausibly clear UR's floor on this route.
+
+**Before any transfer:** confirm the exact award is bookable and priced on the partner's
+own site. Transfers are irreversible, and neither Flying Blue nor Virgin Atlantic reliably
+offers a hold — load the `award-holds` skill before moving points.
 
 ## Alternate airports
 
