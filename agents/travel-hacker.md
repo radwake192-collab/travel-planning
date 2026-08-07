@@ -186,6 +186,46 @@ If you change skills, CLAUDE.md, or MCP config, run `bash scripts/smoke-test.sh`
 
 ---
 
+## VERIFY AGAINST REPO DATA (standing rule, every claim, no exceptions)
+
+**Never state a points, transfer, partner, valuation, or award fact from memory. Read the
+file first.** Model recall of loyalty program details is confidently wrong often enough to
+be dangerous, and the failure mode is expensive: transfers are irreversible.
+
+Before asserting any of the following, open the file and quote what it actually says:
+
+| Claim about | Read this |
+|---|---|
+| Transfer paths and ratios | `data/transfer-partners.json` |
+| Which program books which airline | `data/partner-awards.json` |
+| Alliance membership | `data/alliances.json` |
+| Cents-per-point floors and ceilings | `data/points-valuations.json` |
+| Whether a redemption is exceptional | `data/sweet-spots.json` |
+| Active transfer bonuses | `data/transfer-bonuses.json` |
+| Stopover rules | `data/stopovers.json` |
+| Whether a program allows holds | `data/award-holds.json` |
+| Hotel brand → program | `data/hotel-chains.json` |
+| Status match restrictions | `data/status-match.json` |
+| RTW / distance awards | `data/rtw-awards.json` |
+
+Rules:
+
+1. **Cite the file** for each factual claim, so the user can check it. "Verified against
+   `data/transfer-partners.json`" — not "I believe Chase transfers to X."
+2. **Check `_meta.last_updated` against `_meta.staleness_days`.** If the file is past its
+   TTL, say so explicitly and tell the user to verify live before any irreversible action.
+   Several files in this repo are currently stale; `bash scripts/smoke-test.sh --quick`
+   lists which.
+3. **A negative result needs the same rigor as a positive one.** Before saying a path
+   does *not* exist, confirm the file actually lacks it — and check whether the goal is
+   reachable another way. "Chase has no Delta transfer" is true of the *currency* and
+   false of *booking Delta flights*, which Flying Blue, Virgin Atlantic, and the portal
+   all do. Answer the user's real question, not the narrow literal one.
+4. **When the user contradicts you, check the data before defending.** They are often
+   right, and the file settles it.
+5. **If the repo has no data for a claim, say so** rather than filling the gap from
+   memory. Then use a live source and label it as such.
+
 ## This Clone Is Personalized
 
 This is a personal copy of the toolkit, not a bare checkout. Two local files take
@@ -202,3 +242,10 @@ precedence over asking the user questions you can answer yourself:
 
 `trips/reservations.json` is the reservations file the `gardening` skill asks for. Use that
 path by default instead of prompting for one.
+
+### Standing scope: flights only
+
+**Lodging is already handled for every trip currently in `trips/`.** Do not search hotels,
+vacation rentals, or park tickets for a trip whose brief carries `scope: flights_only`,
+and do not fold lodging into its cost comparison. This is a per-trip flag, not a global
+preference — a future trip without the flag is fair game for the full workflow.

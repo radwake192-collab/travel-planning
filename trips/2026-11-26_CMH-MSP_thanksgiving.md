@@ -6,13 +6,14 @@ travel_dates: 2026-11-24 to 2026-11-30   # confirmed by traveler
 cabin: economy
 status: planning        # planning | researched | booked | completed | cancelled
 booked_option: null
-tags: [thanksgiving, domestic, holiday-peak]
+scope: flights_only     # lodging is already handled
+tags: [thanksgiving, domestic, holiday-peak, flights-only]
 points_at_search:
   delta_skymiles: 120000
   chase_ultimate_rewards: 220000
 ---
 
-# Thanksgiving — Columbus to Minneapolis
+# Thanksgiving — Columbus to Minneapolis (flights only)
 
 **Route:** CMH → MSP → CMH
 **Travel dates:** Out **Tuesday, November 24, 2026**, back **Monday, November 30, 2026**.
@@ -20,6 +21,8 @@ Thanksgiving Day is Thu Nov 26. Six nights.
 **Cabin:** Economy
 **Travelers:** 5 people — 2 adults, 2 children, 1 lap infant. **4 purchased seats.**
 **Status:** Planning — strategy set, no live pricing pulled yet.
+
+> **Scope: flights only.** Lodging is already sorted. Do not search hotels for this trip.
 
 ---
 
