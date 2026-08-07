@@ -63,6 +63,31 @@ is thinnest on peak holiday dates, and needing **four** of it is the hard part. 
 Blue and Virgin Atlantic are genuinely the highest-value options *and* the least likely to
 come through at this party size. That makes them cheap to check and wrong to count on.
 
+### Run this first (nothing below has been checked live)
+
+No award search has been run for this trip. The planning container had no
+`SEATS_AERO_API_KEY` and its network policy blocked seats.aero, delta.com, and
+southwest.com outright, so every number in this brief is derived from
+`data/*.json` reference files — **not one is a live price or a confirmed seat.**
+
+From a local shell with the key set, this is the query that settles the partner-saver
+question. `flyingblue` and `virginatlantic` are the two Chase-reachable SkyTeam doors:
+
+```bash
+curl -s -H "Partner-Authorization: $SEATS_AERO_API_KEY" \
+  "https://seats.aero/partnerapi/search?origin_airport=CMH&destination_airport=MSP&start_date=2026-11-23&end_date=2026-12-01&cabins=economy&order_by=lowest_mileage&include_trips=true&minify_trips=true" | jq '.'
+```
+
+Deliberately unfiltered by `sources` — pull every program first, then narrow. Filtering to
+one program upfront is the documented way to miss the good result. Widening the dates to
+Nov 23–Dec 1 catches the ±1 day on each end.
+
+Then check `RemainingSeats` on anything promising: **you need 4**, and the cached
+availability object reports the *maximum* across grouped flights, so confirm the specific
+flight has four before counting on it. Check `ComputedLastSeen` for staleness, and verify
+on the airline's own site before transferring — Seats.aero data is cached, and phantom
+availability is common.
+
 ### Plan
 
 1. **Run seats.aero first, at 4 seats.** One query covers both Flying Blue and Virgin
